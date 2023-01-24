@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color:#dedede;
+  }
+  
+  h1{
+    border-radius: 10px ;
+    text-align:center;
+    font-family: 'Lobster', cursive;
+    width:300px;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  }
+  h2{
+    font-family: cursive;
+  }
+  img{
+      margin: 20px;
+  }
+  input {
+      height:40px;
+      width:190px;
+      text-align: center;
+      margin: 10px;
+      font-family: cursive;
+      border: 3px solid #000333;
+      border-radius: 15px;
+    }
+  button{
+          margin: 10px;
+          padding: 15px 30px;
+          text-align: center;
+          text-transform: uppercase;
+          background-size: 100% auto;
+          color: white;
+          border-radius: 10px;
+          font-family: cursive;
+          font-weight: 700;
+          background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+          cursor: pointer;
+          
+  }
+  .flex{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+  }
+  .flex2{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+  }
+  .box{
+    background-color:#e4e2e2;
+    border: 1px solid #c7c7c7;
+    border-radius:10px;
+    box-shadow: 2px 2px #a7a5a5;
+    display:inline-block;
+    margin:5px;
+    padding:50px;
+    width:auto;
+    height:auto;
+  }
+  .loading{
+    height: 50px;
+    width: 50px;
+  }

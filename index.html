@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Fun photo</title>
+</head>
+
+<body>
+    <div class="flex2">
+        <h1 title="fun random pics according to your text">FunPhoto</h1>
+        <div class="box">
+            <div class="flex">
+            </div>
+            <h2 class="flex">Search your favorite image</h2>
+            <div class="flex">
+                <input type="text" id="searchbar" placeholder="search image">
+                <button type="button" onclick="clickhandler()">Get image</button>
+                <button type="button" onclick="refreshhandler()">Refresh</button>
+            </div>
+        </div>
+    </div>
+    <div id="imagecontainer" class="flex">
+        <div id="loading" style="display: none;"><img class="loading" src="https://i.stack.imgur.com/kOnzy.gif" alt="loading"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
