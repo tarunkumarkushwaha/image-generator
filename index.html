@@ -15,21 +15,30 @@
 
 <body>
     <div class="flex2">
-        <h1 title="fun random pics according to your text">FunPhoto</h1>
+        <h1 title="Random pics according to your text">FunPhoto</h1>
         <div class="box">
             <div class="flex">
             </div>
             <h2 class="flex">Search your favorite image</h2>
             <div class="flex">
                 <input type="text" id="searchbar" placeholder="search image">
-                <button type="button" onclick="clickhandler()">Get image</button>
+                <button type="button" onclick="clickhandler(searchbar.value)">Get image</button>
                 <button type="button" onclick="window.location.reload()">Refresh</button>
             </div>
         </div>
     </div>
-    <div id="imagecontainer" class="flex">
-        <div id="loading" style="display: none;"><img class="loading" src="https://i.stack.imgur.com/kOnzy.gif"
-                alt="loading"></div>
+    <div class="flex">
+        <button type="button" onclick="clickhandler('Nature')">Nature</button>
+        <button type="button" onclick="clickhandler('Animals')">Animals</button>
+        <button type="button" onclick="clickhandler('spiritual')">spiritual</button>
+        <button type="button" onclick="clickhandler('Cities')">Cities</button>
+        <button type="button" onclick="clickhandler('architechture')">architechture</button>
+        <button type="button" onclick="clickhandler('Scenery')">Scenery</button>
+    </div>
+
+    <div id="loading" class="invisible"><img class="loading" src="https://i.stack.imgur.com/kOnzy.gif" alt="loading">
+    </div>
+    <div id="imagecontainer"></div>
     </div>
     <script src="script.js"></script>
 </body>

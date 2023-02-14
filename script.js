@@ -1,21 +1,18 @@
 let searchbar = document.getElementById("searchbar")
-//let searchitem = searchbar.value   this does not work
-let url1 = "https://source.unsplash.com/featured/1600x900?"
+let searchitem = searchbar.value
+let url1 = "https://source.unsplash.com/featured/320x240?"
 const loadterminate = () => {
-    let loading = document.getElementById('loading')
-    loading.setAttribute("style", "display: none;")
-    console.log(loading)
+  let loading = document.getElementById('loading')
+  loading.setAttribute("class", "invisible")
 }
-const clickhandler = () => {
-    let searchitem = searchbar.value
-    // it works only in function 
-    let urlupdated = url1 + searchitem
-    let image = document.createElement('img')
-    image.setAttribute("src", urlupdated)
-    let imagecontainer = document.getElementById('imagecontainer')
-    imagecontainer.append(image)
-    let loading = document.getElementById('loading')
-    loading.setAttribute("style", "display: inline;")
-    setTimeout(loadterminate, 1500)
-  // console.log(loading)
+const clickhandler = (e) => {
+  searchbar.value = ""
+  let urlupdated = url1 + searchitem + e
+  let image = document.createElement('img')
+  image.setAttribute("src", urlupdated)
+  let imagecontainer = document.getElementById('imagecontainer')
+  imagecontainer.prepend(image)
+  let loading = document.getElementById('loading')
+  loading.setAttribute("class", "flex")
+  setTimeout(loadterminate, 1500)
 }
