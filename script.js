@@ -1,6 +1,6 @@
 let searchbar = document.getElementById("searchbar")
 //let searchitem = searchbar.value   this does not work
-let url1 = "https://loremflickr.com/320/240/"
+let url1 = "https://source.unsplash.com/featured/1600x900?"
 const loadterminate = () => {
     let loading = document.getElementById('loading')
     loading.setAttribute("style", "display: none;")
