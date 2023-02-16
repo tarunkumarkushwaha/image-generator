@@ -5,6 +5,11 @@ body {
   background-color: #f7c79a;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   border-radius: 10px;
   text-align: center;
@@ -15,6 +20,8 @@ h1 {
 
 h2 {
   font-family: cursive;
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 img {
@@ -33,7 +40,7 @@ input {
 
 button {
   margin: 10px;
-  padding: 15px 30px;
+  padding: 15px 10px;
   text-align: center;
   text-transform: uppercase;
   background-size: 100% auto;
@@ -56,6 +63,7 @@ button {
 }
 
 .flex2 {
+  margin: 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -69,7 +77,7 @@ button {
   border-radius: 10px;
   box-shadow: 2px 2px #a7a5a5;
   display: inline-block;
-  margin: 5px;
+  margin-top: 20px;
   padding: 50px;
   width: auto;
   height: auto;
@@ -94,8 +102,72 @@ button {
   justify-content: center;
 }
 
+.image {
+  height: 240px;
+  width: 320px;
+  border: 2px solid rgb(255, 123, 0);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.image:hover {
+  border: 2px solid rgb(48, 23, 0);
+  transition: 0.1s ease;
+}
+
+.enlarge {
+  transition: 1s ease;
+  position: fixed;
+  top: -5%;
+  border: 25px solid #f7c79a;
+  height: 720px;
+  width: 1600px;
+}
+
+.invisible {
+  display: none;
+}
+
+#cross {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  top: 5%;
+  left: 92%;
+  padding-top: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+  height: 40px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 2px solid rgb(201, 1, 1);
+  color: red;
+}
+
 @media only screen and (max-width: 600px) {
   button {
     width: 40%;
+  }
+
+  .enlarge {
+    position: fixed;
+    top: 20%;
+    border: 2px solid black;
+    height: 280px;
+    width: 370px;
+  }
+
+  #cross {
+    top: 25%;
+    left: 75%;
+  }
+
+  .image {
+    height: 120px;
+    width: 130px;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 10px;
+    cursor: pointer;
   }
 }
