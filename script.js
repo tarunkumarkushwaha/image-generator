@@ -39,7 +39,6 @@ const clickhandler = (e) => {
 }
 
 const imageviewer = (e) => {
-  console.log("image clicked", e.target)
   target = e.target
   e.target.setAttribute("class", "enlarge")
   cross.removeAttribute("class", "invisible")

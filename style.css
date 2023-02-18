@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #f7c79a;
+  background-color: #f7dec2;
 }
 
 * {
@@ -16,7 +16,7 @@ h1 {
   text-align: center;
   font-family: 'Lobster', cursive;
   width: 300px;
-  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  background-image: linear-gradient(30deg, #fd4c29 0%, #fcbc64 51%, #fd4520 100%);
 }
 
 h2 {
@@ -78,7 +78,7 @@ button:hover{
 }
 
 .box {
-  background-color: #e4e2e2;
+  background-color: #f8ede0;
   border: 1px solid #c7c7c7;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -164,6 +164,7 @@ button:hover{
     position: fixed;
     top: 20%;
     border: 2px solid black;
+    border-radius: 10px;
     height: 40%;
     width: 95%;
   }
