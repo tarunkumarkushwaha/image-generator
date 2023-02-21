@@ -59,7 +59,7 @@ const scrollhandler = () => {
     // console.log("totalheight- ",totalheight,"and position- ",position)
     if (totalheight < position) {
       // console.log("load new images")
-      updater(query)
+      setTimeout(updater(query),1000)
     }
   }
 }
